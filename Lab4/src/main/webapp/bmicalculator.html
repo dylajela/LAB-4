@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="BMICalculator" action="processBMI.jsp" method ="post">
+            <fieldset> 
+                <legend>Body Mass Index (BMI) Calculator</legend>
+                <p>BMI = weight/(height*height)</p>
+                <table>
+                    <tr>
+                        <td><label>WEIGHT (KG) </label></td>
+                        <td>
+                            <input type="number" id="weight" name="weight" min="1" max="1000" value="1" required/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>HEIGHT (CM) </label></td>
+                        <td>
+                            <input type="number" id="height" name="height" min="1" max="1000" value="1" required/>
+                        </td>
+                    </tr>
+                    
+                    <tr><td></td></tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="submit" id="btnSubmit" value="Submit"/>
+                            <input type="reset" id="btnCancel" value="Cancel"/>
+                        </td>
+                    </tr>
+                    
+                    
+                </table>
+            </fieldset>
+        </form>
+        <footer><br>&copy;2024-Adilah Ainaa</footer>
+    </body>
+</html>
